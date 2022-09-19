@@ -49,7 +49,7 @@ def snippet_4():
 
     # TODO: Explain how d is set to False in a comment
     assert(d == False)  # <-- DO NOT EDIT THIS LINE
-
+#logical operator OR  are the Python operators for logical NOT 
 
 def snippet_5():
     # TODO: Modify the comparison operator so o evalutes to true
