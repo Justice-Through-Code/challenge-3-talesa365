@@ -38,9 +38,9 @@ def snippet_3():
     b = 1
     c = (a >= b)
 
-    print(f"The value of c ({c}) is True since a ({a}) is greater than b ({b}).")
+    print(f"The value of c ({c}) is True since a ({a}) is greater than or equal to b ({b}).")
     assert(c == True)  # <-- DO NOT EDIT THIS LINE
-
+snippet_3()
 
 def snippet_4():
     # TODO: Modify exactly one boolean operator in the assignment of d, so that d evaluates to False
