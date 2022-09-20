@@ -11,7 +11,7 @@ def stock_purchases():
     first_name = input('What is your name? ')
     # 1.2 TODO: Ask the client how many dollars they would like to invest (use the string: "How much would you like to invest? $")
     # and save it into a variable
-    investment_dollars = input('How much would you like to invest?  $')
+    investment_dollars = int(input('How much would you like to invest?  $'))
     # NOTE: When you use the `input` function to get user input, what do numbers get saved as?
 
     # 1.3 TODO: Uncomment the line below to ask the client which stock they're interested in.
@@ -23,8 +23,21 @@ def stock_purchases():
 
     # 1.4 TODO: Use `if/elif/else` conditional logic to determine how much stock the client can buy,
     # and save it in a variable
-
+    stocks = 0
+    if stock_name == "Amazon": 
+        stocks = amazon
+    elif stock_name == "Apple":
+        stocks = apple
+    elif stock_name == "Facebook":
+        stocks = fb
+    elif stock_name == "Google":
+        stocks = google
+    elif stock_name == "Microsoft":
+        stocks = msft
+        
+    num_stocks =  investment_dollars//stocks    
     # 1.5 TODO: Once you've calculated the number of stocks that can be purchased,
     # Use an f-string to print the result for the client, ala:
+    print(f'{first_name} has ${investment_dollars} to invest and can buy {num_stocks} of {stock_name} at the current price of ${stocks}.')
     # Alex has $5000 to invest and can buy 50 shares of Apple at the current price of $100.
 stock_purchases()
