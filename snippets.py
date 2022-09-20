@@ -45,11 +45,11 @@ def snippet_3():
 def snippet_4():
     # TODO: Modify exactly one boolean operator in the assignment of d, so that d evaluates to False
 
-    d = (5 < 7) or (8 < 20)
+    d = (5 > 7) or not (8 < 20)
 
     # TODO: Explain how d is set to False in a comment
     assert(d == False)  # <-- DO NOT EDIT THIS LINE
-# the operator OR  compares two values and will return true if one or the other is true but will return false if both values are equal.  
+# the keyword compares two values and will return true if one or the other is true but will return false if both values are equal.  
 
 def snippet_5():
     # TODO: Modify the comparison operator so o evalutes to true
